@@ -31,7 +31,7 @@ void loop() {
   digitalWrite(trig, LOW);
   delayMicroseconds(2);
   digitalWrite(trig, HIGH);
-  delayMicroseconds(10);   //Setting trig high for 10µs then low to send out an 8 cycle sonic bursts
+  delayMicroseconds(10);   //Setting trig high for 10µs then low to send out 8 cycle sonic bursts
   digitalWrite(trig, LOW);
 
   timeTaken = pulseIn(echo, HIGH); //Echo will measure the time in µs the sound wave travels 
